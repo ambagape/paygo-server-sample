@@ -1,16 +1,13 @@
 # paygo-server
 To install:
-1) mvn clean install -s setting.xml
+1) mvn clean install -s settings.xml
 
 To run
-1) cd service-gateway
-2) mvn play2:run
+1) cd spring-service-gateway
+2) cp src/main/resources/application.sample.properties src/main/resources/application.properties
+3) Update the settings in application.properties to reflect your environment
+4) mvn flyway:clean flyway:migrate
+5) mvn spring-boot:run -s ../settings.xml
 
-Access server on localhost:9000
-Swagger documentation is avaliable at localhost:9000/docs
-
-To run using Docker-Compose:
-1) docker-compose up -
-2) Swagger documentation is avaliable at localhost:9000/docs
-
-   Connect to server via: localhost:9000
+Access server on localhost:port
+Swagger documentation is avaliable at localhost:port/swagger-ui/index.html
