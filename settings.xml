@@ -1,0 +1,10 @@
+<settings>
+	<servers>
+		<server>
+			<id>gitit-repo</id>
+			<username>myMavenRepo</username>
+			<password>nonstop</password>
+		</server>
+	</servers>
+	<localRepository>/usr/share/maven/ref/repository</localRepository>
+</settings>

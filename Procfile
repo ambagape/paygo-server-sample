@@ -1,0 +1,1 @@
+web: sh target/dist/play-java-*/start -Dhttp.port=$PORT -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${JDBC_DATABASE_URL} -Ddb.default.username=${JDBC_DATABASE_USERNAME} -Ddb.default.password=${JDBC_DATABASE_PASSWORD}
